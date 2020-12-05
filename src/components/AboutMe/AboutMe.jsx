@@ -3,6 +3,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import "./AboutMe.css";
 import picofme from "../files/picofme.jpg";
+import resume from "../files/resume.pdf";
 
 function AboutMe() {
   const sectionVariants = {
@@ -52,7 +53,9 @@ function AboutMe() {
           Nederlands spreken.
         </p>
         <br />
-        <button>Download my resume</button>
+        <a href={resume}>
+          <button>Download my resume</button>
+        </a>
       </div>
       <div className="box portrait">
         <img src={picofme} alt="" />
