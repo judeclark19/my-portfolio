@@ -16,6 +16,7 @@ function MyWork() {
   return (
     <section className="my-work" id="my-work">
       <span id="my-work-title">My Work</span>
+      {/* <div className="line2"></div> */}
       <div className="gallery">
         <Card
           projectName="Virtual Menorah"

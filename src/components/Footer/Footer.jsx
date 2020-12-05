@@ -2,7 +2,11 @@ import React from "react";
 import "./Footer.css";
 
 function Footer() {
-  return <footer>uh huh dis my foot</footer>;
+  return (
+    <footer>
+      <a href="https://github.com/judeclark19">Jude Clark © 2020</a>
+    </footer>
+  );
 }
 
 export default Footer;

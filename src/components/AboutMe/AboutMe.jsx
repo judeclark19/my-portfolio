@@ -6,7 +6,8 @@ function AboutMe() {
   return (
     <section className="about-me" id="about-me">
       <div className="box bio">
-        <div className="hello">hello I'm jude</div>
+        <div className="hello">Hello, I'm Jude.</div>
+        {/* <div className="line"></div> */}
         <p>
           I am a 28 year old full-stack web developer living in Duluth, GA. My
           coworkers nicknamed me "the human computer". My attention to detail,
@@ -27,7 +28,8 @@ function AboutMe() {
           the coding world! My other interests include: makeup, the Olympics,
           Nederlands spreken.
         </p>
-        <button>Resume</button>
+        <br />
+        <button>Download my resume</button>
       </div>
       <div className="box portrait">
         <img src={picofme} alt="" />

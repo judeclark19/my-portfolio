@@ -1,4 +1,11 @@
 footer {
-  background: rgb(248, 209, 131);
+  background: #301227;
   height: 50px;
+  display: grid;
+  place-items: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
 }

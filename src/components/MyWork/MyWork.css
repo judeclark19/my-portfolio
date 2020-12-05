@@ -1,16 +1,30 @@
 .my-work {
   /* background: palegreen; */
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 130px);
+  margin-bottom: 3rem;
 }
 
 #my-work-title {
+  /* border: 1px dotted blue; */
+  font-family: "Parisienne", cursive;
   display: block;
-  font-size: 2.5rem;
+  font-size: 3rem;
   width: 100%;
-  padding: 2rem 3rem 1rem 3rem;
+  padding: 0rem 3rem 1rem 3rem;
+  text-align: center;
+}
+
+.line2 {
+  /* align-self: center; */
+  margin: auto;
+  margin-bottom: 2rem;
+  height: 3px;
+  width: 50%;
+  background-color: #301227;
 }
 
 .gallery {
   display: flex;
   flex-wrap: wrap;
+  margin: 0rem 2rem;
 }
