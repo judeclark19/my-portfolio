@@ -1,0 +1,41 @@
+.about-me {
+  background: lightgoldenrodyellow;
+  min-height: calc(100vh - 50px);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  border: 2px dashed;
+  flex-basis: 33rem;
+  flex-grow: 1;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.hello {
+  font-size: 2.5rem;
+  width: 100%;
+  margin: 1rem 0rem;
+}
+
+.bio p {
+  margin: 1rem 0rem;
+}
+
+.portrait {
+  display: grid;
+  place-items: center;
+  padding: 5rem;
+}
+.portrait img {
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 600px;
+}
