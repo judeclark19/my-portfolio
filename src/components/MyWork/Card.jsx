@@ -1,18 +1,25 @@
 import React from "react";
+import "./Card.css";
 
 function Card({ image, projectName, description, deployed, github }) {
   return (
     <div className="card">
-      {projectName}
-      <img src={image} alt="" />
-      {description}
-      <div className="buttons">
-        <a href={deployed}>
-          <button>Deployed App</button>
-        </a>
-        <a href={github}>
-          <button>GitHub Repo</button>
-        </a>
+      <div className="top">
+        <h2>{projectName}</h2>
+      </div>
+      <div className="middle">
+        <img src={image} alt={projectName} />
+      </div>
+      <div className="bottom">
+        <p>{description}</p>
+        <div className="buttons">
+          <a href={deployed}>
+            <button>Deployed App</button>
+          </a>
+          <a href={github}>
+            <button>GitHub Repo</button>
+          </a>
+        </div>
       </div>
     </div>
   );

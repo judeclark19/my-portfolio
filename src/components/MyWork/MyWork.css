@@ -14,18 +14,3 @@
   display: flex;
   flex-wrap: wrap;
 }
-
-.card {
-  /* background: pink; */
-  border: 1px dashed black;
-  border-radius: 0.5rem;
-  min-height: 100px;
-  flex-grow: 1;
-  flex-basis: 25rem;
-  margin: 1rem;
-  text-align: center;
-}
-
-.card img {
-  width: 100%;
-}
