@@ -8,7 +8,9 @@ function Card({ image, projectName, description, deployed, github }) {
         <h2>{projectName}</h2>
       </div>
       <div className="middle">
-        <img src={image} alt={projectName} />
+        <a href={deployed}>
+          <img src={image} alt={projectName} />
+        </a>
       </div>
       <div className="bottom">
         <p>{description}</p>
