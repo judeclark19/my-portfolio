@@ -5,6 +5,10 @@
   font-family: sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* section {
   background: lightgoldenrodyellow;
   height: calc(100vh - 50px);
