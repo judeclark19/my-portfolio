@@ -1,6 +1,9 @@
 import React from "react";
 import "./Contact.css";
 
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 //icons
 import phone from "../files/phoneicon.png";
 import gmail from "../files/gmail.png";
@@ -8,8 +11,29 @@ import linkedIn from "../files/linkedin.png";
 import github from "../files/github.png";
 
 function Contact() {
+  const sectionVariants = {
+    initial: { opacity: 0 },
+    animate: { opacity: 1, transition: { duration: 0.8 } },
+  };
+
+  const controls = useAnimation();
+  const [element, view] = useInView({ threshold: 0.5 });
+
+  if (view) {
+    controls.start("animate");
+  } else {
+    controls.start("initial");
+  }
+
   return (
-    <section className="contact-info" id="contact-info">
+    <motion.section
+      ref={element}
+      variants={sectionVariants}
+      animate={controls}
+      initial="initial"
+      className="contact-info"
+      id="contact-info"
+    >
       <div>
         <span id="contact-me-title">Contact Me</span>
         {/* <div className="line3"></div> */}
@@ -27,7 +51,7 @@ function Contact() {
           </a>
         </p>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

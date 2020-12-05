@@ -1,10 +1,33 @@
 import React from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import "./AboutMe.css";
 import picofme from "../files/picofme.jpg";
 
 function AboutMe() {
+  const sectionVariants = {
+    initial: { opacity: 0 },
+    animate: { opacity: 1, transition: { duration: 0.8 } },
+  };
+
+  const controls = useAnimation();
+  const [element, view] = useInView({ threshold: 0.5 });
+
+  if (view) {
+    controls.start("animate");
+  } else {
+    controls.start("initial");
+  }
+
   return (
-    <section className="about-me" id="about-me">
+    <motion.section
+      ref={element}
+      variants={sectionVariants}
+      animate={controls}
+      initial="initial"
+      className="about-me"
+      id="about-me"
+    >
       <div className="box bio">
         <div className="hello">Hello, I'm Jude.</div>
         {/* <div className="line"></div> */}
@@ -34,7 +57,7 @@ function AboutMe() {
       <div className="box portrait">
         <img src={picofme} alt="" />
       </div>
-    </section>
+    </motion.section>
   );
 }
 

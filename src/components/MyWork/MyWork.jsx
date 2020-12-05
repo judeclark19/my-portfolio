@@ -2,6 +2,9 @@ import React from "react";
 import Card from "./Card";
 import "./MyWork.css";
 
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 //images
 import menorah from "../files/menorahSS.png";
 import capture from "../files/captureSS.png";
@@ -13,8 +16,28 @@ import weather from "../files/weatherSS.png";
 import jsQuiz from "../files/codingQuizSS.png";
 
 function MyWork() {
+  const sectionVariants = {
+    initial: { opacity: 0 },
+    animate: { opacity: 1, transition: { duration: 0.8 } },
+  };
+  const controls = useAnimation();
+  const [element, view] = useInView({ threshold: 0.1 });
+
+  if (view) {
+    controls.start("animate");
+  } else {
+    controls.start("initial");
+  }
+
   return (
-    <section className="my-work" id="my-work-section">
+    <motion.section
+      ref={element}
+      variants={sectionVariants}
+      animate={controls}
+      initial="initial"
+      className="my-work"
+      id="my-work-section"
+    >
       <span id="my-work-title">My Work</span>
       {/* <div className="line2"></div> */}
       <div className="gallery">
@@ -75,7 +98,7 @@ function MyWork() {
           github="https://github.com/judeclark19/coding-quiz"
         />
       </div>
-    </section>
+    </motion.section>
   );
 }
 
