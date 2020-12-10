@@ -2,8 +2,8 @@ import React from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import "./AboutMe.css";
-import picofme from "../files/picofme.jpg";
-import resume from "../files/resume.pdf";
+import picofme from "../../media/picofme.jpg";
+import resume from "../../media/resume.pdf";
 
 function AboutMe() {
   const sectionVariants = {
@@ -12,7 +12,7 @@ function AboutMe() {
   };
 
   const controls = useAnimation();
-  const [element, view] = useInView({ threshold: 0.5 });
+  const [element, view] = useInView({ threshold: 0.2 });
 
   if (view) {
     controls.start("animate");

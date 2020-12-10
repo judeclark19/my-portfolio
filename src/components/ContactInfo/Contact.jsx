@@ -5,10 +5,9 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 //icons
-import phone from "../files/phoneicon.png";
-import gmail from "../files/gmail.png";
-import linkedIn from "../files/linkedin.png";
-import github from "../files/github.png";
+
+import linkedIn from "../../media/linkedin.png";
+import github from "../../media/github.png";
 
 function Contact() {
   const sectionVariants = {

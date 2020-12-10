@@ -6,14 +6,14 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 //images
-import menorah from "../files/menorahSS.png";
-import capture from "../files/captureSS.png";
-import letsRoll from "../files/letsrollSS.png";
-import dataTable from "../files/dataTableSS.png";
-import bookish from "../files/bookishSS.png";
-import personaGen from "../files/personaGenSS.png";
-import weather from "../files/weatherSS.png";
-import jsQuiz from "../files/codingQuizSS.png";
+import menorah from "../../media/menorahDemo.gif";
+import capture from "../../media/captureSS.png";
+import letsRoll from "../../media/letsrollSS.png";
+import dataTable from "../../media/dataTableSS.png";
+import bookish from "../../media/bookishSS.png";
+import personaGen from "../../media/personaGenSS.png";
+import weather from "../../media/weatherSS.png";
+import jsQuiz from "../../media/codingQuizSS.png";
 
 function MyWork() {
   const sectionVariants = {
@@ -21,7 +21,7 @@ function MyWork() {
     animate: { opacity: 1, transition: { duration: 0.8 } },
   };
   const controls = useAnimation();
-  const [element, view] = useInView({ threshold: 0.1 });
+  const [element, view] = useInView({ threshold: 0.05 });
 
   if (view) {
     controls.start("animate");
