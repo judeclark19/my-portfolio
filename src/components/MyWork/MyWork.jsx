@@ -36,7 +36,7 @@ function MyWork() {
       animate={controls}
       initial="initial"
       className="my-work"
-      id="my-work-section"
+      id="my-work"
     >
       <span id="my-work-title">My Work</span>
       {/* <div className="line2"></div> */}
