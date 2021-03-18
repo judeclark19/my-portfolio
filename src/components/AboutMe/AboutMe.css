@@ -14,6 +14,7 @@
 .bio {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 3rem;
 }
@@ -21,7 +22,7 @@
 .hello {
   font-size: 3rem;
   width: 100%;
-  margin: 1rem 0rem;
+  /* margin: 1rem 0rem; */
   color: #301227;
   font-family: 'Parisienne', cursive;
 }

@@ -49,10 +49,10 @@ function AboutMe() {
             nice life for myself and my husband (and two cats).
           </p>
           <p>
-            I received my certificate in full-stack web development from
+            I received my certificate in full-stack web development from{' '}
             <a href="https://bootcamp.pe.gatech.edu/coding/">
               a coding bootcamp at Georgia Tech
-            </a>
+            </a>{' '}
             in November 2020 and have fallen in love with coding. I enjoyed the
             coding bootcamp so much that I stayed on as a TA and am now helping
             other students start their coding journeys.
