@@ -41,3 +41,11 @@
   font-weight: bold;
   color: #2d0d23;
 }
+
+.contact-icon {
+  transition: all 0.1s ease-in-out;
+}
+
+.contact-icon:hover {
+  transform: scale(1.15);
+}

@@ -1,13 +1,13 @@
-import React from "react";
-import "./Contact.css";
+import React from 'react';
+import './Contact.css';
 
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 //icons
 
-import linkedIn from "../../media/linkedin.png";
-import github from "../../media/github.png";
+import linkedIn from '../../media/linkedin.png';
+import github from '../../media/github.png';
 
 function Contact() {
   const sectionVariants = {
@@ -19,9 +19,9 @@ function Contact() {
   const [element, view] = useInView({ threshold: 0.5 });
 
   if (view) {
-    controls.start("animate");
+    controls.start('animate');
   } else {
-    controls.start("initial");
+    controls.start('initial');
   }
 
   return (
@@ -43,10 +43,10 @@ function Contact() {
         <br />
         <p>
           <a href="https://github.com/judeclark19">
-            <img src={github} alt="GitHub logo" />
+            <img className="contact-icon" src={github} alt="GitHub logo" />
           </a>
           <a href="https://www.linkedin.com/in/jude-clark-89262634/">
-            <img src={linkedIn} alt="LinkedIn logo" />
+            <img className="contact-icon" src={linkedIn} alt="LinkedIn logo" />
           </a>
         </p>
       </div>
