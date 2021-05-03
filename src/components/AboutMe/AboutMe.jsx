@@ -2,7 +2,7 @@ import React from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import './AboutMe.css';
-import picofme from '../../media/picofme.jpg';
+import picofme from '../../media/picofme.jpeg';
 import resume from '../../media/resume.pdf';
 
 function AboutMe() {
