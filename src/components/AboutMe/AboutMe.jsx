@@ -3,7 +3,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import './AboutMe.css';
 import picofme from '../../media/picofme.jpeg';
-import resume from '../../media/resume.pdf';
+// import resume from '../../media/resume.pdf';
 
 function AboutMe() {
   const sectionVariants = {
@@ -34,7 +34,7 @@ function AboutMe() {
         {/* <div className="line"></div> */}
         <div className="bio-text">
           <p>
-            I am a 28 year old full-stack web developer living in Duluth, GA. My
+            I am a 29 year old full-stack web developer living in Duluth, GA. My
             coworkers nicknamed me "the human computer". My attention to detail,
             efficiency, and ability to conceptualize complex systems are
             qualities that help me to excel at building and maintaining
@@ -49,23 +49,21 @@ function AboutMe() {
             nice life for myself and my husband (and two cats).
           </p>
           <p>
-            I received my certificate in full-stack web development from{' '}
+            I received my certificate in full-stack web development from {' '}
             <a href="https://bootcamp.pe.gatech.edu/coding/">
-              a coding bootcamp at Georgia Tech
+              a coding bootcamp at Georgia Tech 
             </a>{' '}
-            in November 2020 and have fallen in love with coding. I enjoyed the
-            coding bootcamp so much that I stayed on as a TA and am now helping
-            other students start their coding journeys.
+            in November 2020 and fell in love with coding. I served as a TA for the bootcamp and I am now living my dream as a Junior Full Stack Developer for <a href="https://staratlas.com/">Star Atlas</a>.
           </p>
           <p>
             My other interests include: makeup, the Olympics, Nederlands
             spreken.
           </p>
         </div>
-        <br />
+        {/* <br />
         <a href={resume}>
           <button>Download my resume</button>
-        </a>
+        </a> */}
       </div>
       <div className="box portrait">
         <img src={picofme} alt="" />

@@ -9,12 +9,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* section {
-  background: lightgoldenrodyellow;
-  height: calc(100vh - 50px);
-
-} */
-
 button {
   cursor: pointer;
   color: white;
@@ -28,5 +22,4 @@ button {
 button:hover {
   background-color: #301227;
   border: 2px inset #301227;
-  /* font-size: 1.1rem; */
 }
