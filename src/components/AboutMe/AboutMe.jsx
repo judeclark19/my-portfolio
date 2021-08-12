@@ -31,10 +31,10 @@ function AboutMe() {
     >
       <div className="box bio">
         <div className="hello">Hello, I'm Jude.</div>
-        {/* <div className="line"></div> */}
+
         <div className="bio-text">
           <p>
-            I am a 29 year old full-stack web developer living in Duluth, GA. My
+            I am a 29 year old full-stack web developer living in Atlanta, GA. My
             coworkers nicknamed me "the human computer". My attention to detail,
             efficiency, and ability to conceptualize complex systems are
             qualities that help me to excel at building and maintaining
